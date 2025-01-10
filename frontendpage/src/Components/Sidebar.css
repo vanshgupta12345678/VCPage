@@ -1,11 +1,11 @@
-/* Reset body margin */
+/* Sidebar base styles */
 body {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Sidebar styling */
-  .sidebar {
+}
+
+/* Sidebar styling */
+.sidebar {
     width: 270px; /* Default sidebar width */
     height: 1584px; /* Full viewport height */
     background-color: white;
@@ -15,48 +15,41 @@ body {
     opacity: 1;
     transition: all 0.3s ease; /* Smooth transition for responsiveness */
     z-index: 1;
-  }
-  .i1{
-    padding-left:10px;
+}
+
+.i1 {
+    padding-left: 10px;
     margin-top: 10px;
     font-size: 25px;
-
-    
 }
-.txt2{
+
+.txt2 {
     color: #000000A6;
- font-family: Outfit;
-font-size: 16px;
-font-weight: 400;
-line-height: 20.16px;
-letter-spacing: 0.02em;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-margin-left: 10px;
+    font-family: Outfit, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: px;
 }
-.i2{
-    color:#000000A6;
-    padding-left:8px;
-    margin-top: 13.5px;
-    font-size: 25px;
 
-    
+.i2 {
+    color: #000000A6;
+    padding-left: 8px;
+    margin-top: 16px;
+    font-size: 18px;
 }
-  /* Apply styles when sidebar is open (for mobile) */
-  .sidebar.open {
-    left: 0; /* Ensure it's visible when toggled */
-  }
-  
-  /* Logo and text styling */
-  .txtdiv {
+
+.txtdiv {
     width: 117.97px;
     height: 51.93px;
     margin-top: 26.86px;
     margin-left: 33.03px;
-  }
-  
-  .text1 {
+}
+
+.text1 {
     color: #006EBE;
     font-family: 'Inter', sans-serif;
     font-size: 30px;
@@ -64,10 +57,10 @@ margin-left: 10px;
     line-height: 36px;
     text-align: left;
     margin-left: 45px;
-  }
-  
-  /* Button inside sidebar */
-  .Button {
+}
+
+/* Button styling */
+.Button {
     text-align: center;
     width: 236px;
     height: 48px;
@@ -76,30 +69,27 @@ margin-left: 10px;
     border-radius: 7px;
     margin-top: 30px;
     cursor: pointer;
-  }
-  .Button2 {
+}
+
+.Button2 {
     text-align: center;
     width: 236px;
     height: 48px;
-
-
     border-radius: 7px;
     margin-top: 10px;
     cursor: pointer;
-  }
-  .Button p {
+}
+
+.Button p {
     margin: 0;
     padding: 10px;
     font-size: 18px;
     color: white;
-  }
-  
-  /* Sidebar toggle button (for mobile) */
-  .sidebar-toggle {
+}
+
+.sidebar-toggle {
     display: none; /* Hide by default */
     position: fixed;
-    
-    
     background-color: #006EBE;
     color: white;
     border: none;
@@ -107,112 +97,138 @@ margin-left: 10px;
     font-size: 10px;
     cursor: pointer;
     z-index: 2;
-  }
-  
-  /* For larger screens (Desktops) */
-  @media screen and (min-width: 1024px) {
+}
+
+/* For larger screens (Desktops) */
+@media screen and (min-width: 1024px) {
     .sidebar {
-      left: 0; /* Ensure sidebar is always visible */
-      width: 270px; /* Default sidebar width */
+        left: 0; /* Ensure sidebar is always visible */
+        width: 270px; /* Default sidebar width */
     }
-  }
-  
-  /* For medium screens (tablet-sized devices) */
-  @media screen and (max-width: 1024px) {
-    .sidebar {
-      width: 220px; /* Reduce sidebar width */
+
+    .txt2 {
+        font-size: 16px;
     }
-  
-    .Button {
-      width: 200px; /* Adjust button width */
-    }
-  
+
     .text1 {
-      font-size: 24px;
-      margin-left: 20px;
+        font-size: 30px;
     }
-  
-    .txtdiv {
-      margin-left: 20px;
-    }
-  }
-  
-  /* For small screens (mobile-sized devices) */
-  @media screen and (max-width: 768px) {
+}
+
+/* For medium screens (tablet-sized devices) */
+@media screen and (max-width: 1024px) {
     .sidebar {
-      width: 180px; /* Further reduce sidebar width */
+        width: 220px; /* Reduce sidebar width */
     }
-  
+
     .Button {
-      width: 160px; /* Further reduce button width */
+        width: 200px; /* Adjust button width */
     }
-  
+
     .text1 {
-      font-size: 20px;
-      margin-left: 15px;
+        font-size: 24px;
+        margin-left: 20px;
     }
-  
+
     .txtdiv {
-      margin-left: 15px;
+        margin-left: 20px;
     }
-  
+
+    .txt2 {
+        font-size: 14px; /* Adjust text size on tablet */
+    }
+}
+
+/* For small screens (mobile-sized devices) */
+@media screen and (max-width: 768px) {
     .sidebar {
-      left: -180px; /* Initially hide sidebar off-screen on mobile */
+        width: 180px; /* Further reduce sidebar width */
     }
-  
+
+    .Button {
+        width: 160px; /* Further reduce button width */
+    }
+
+    .text1 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    .txtdiv {
+        margin-left: 15px;
+    }
+
+    .sidebar {
+        left: -180px; /* Initially hide sidebar off-screen on mobile */
+    }
+
     .sidebar.open {
-      left: 0; /* Show sidebar when toggled */
+        left: 0; /* Show sidebar when toggled */
     }
-  
-    /* Show the sidebar toggle button on mobile */
+
     .sidebar-toggle {
-      display: block;
+        display: block;
     }
-  }
-  
-  /* For extra small screens (very small mobile devices) */
-  @media screen and (max-width: 480px) {
+
+    .i2 {
+        font-size: 20px;
+        margin-top: 11px;
+    }
+
+    .txt2 {
+        font-size: 12px; /* Smaller text for mobile */
+    }
+
+    .Button2 {
+        width: 140px; /* Adjust width for mobile */
+    }
+}
+
+/* For extra small screens (very small mobile devices) */
+@media screen and (max-width: 480px) {
     .sidebar {
-      width: 150px; /* Further reduce sidebar width */
+        width: 150px; /* Further reduce sidebar width */
     }
-  
+
     .Button {
-      width: 140px; /* Further adjust button width */
+        width: 140px; /* Further adjust button width */
     }
-  
+
     .text1 {
-      font-size: 18px;
-      margin-left: 10px;
+        font-size: 18px;
+        margin-left: 10px;
     }
-  
+
     .txtdiv {
-      margin-left: 10px;
+        margin-left: 10px;
     }
-  
+
     .sidebar {
-      left: -150px; /* Initially hide sidebar off-screen on extra small devices */
+        left: -150px; /* Initially hide sidebar off-screen on extra small devices */
     }
-  
+
     .sidebar.open {
-      left: 0; /* Show sidebar when toggled */
+        left: 0; /* Show sidebar when toggled */
     }
-  }
-  
-.butntxt{
+
+    .i2 {
+        font-size: 18px; /* Smaller icons */
+        margin-top: 11px;
+    }
+
+    .txt2 {
+        font-size: 10px; /* Smaller text for very small devices */
+    }
+}
+
+.butntxt {
     text-align: center;
     width: 83px;
-height: 20px;
-gap: 0px;
-opacity: 0px;
-font-family: 'Inter',sans-serif;
-font-size: 16px;
-font-weight: 400;
-
-/* line-height: 20.16px; */
-/* letter-spacing: 0.02em; */
-/* text-align: left; */
-/* margin-right: -220px; */
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
-}  
+    height: 20px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration-skip-ink: none;
+}

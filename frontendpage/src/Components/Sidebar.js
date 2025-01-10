@@ -36,11 +36,12 @@ const Sidebar = () => {
                 <div className="txtdiv">
                     <p className="text1">Logo</p>
                 </div>
-                <div >
-                    <div className="Button" style={{ display: 'flex', marginLeft: '4px' }}>
+                <button className="Button" style={{ border:'none',display: 'flex', marginLeft: '4px' }}>
                         <MdDashboard className='i1' />
-                        <p style={{ textAlign: 'center', marginTop: '3px' }} className='butntxt'>Dashboard</p>
-                    </div>
+                        <span style={{ textAlign: 'center', marginTop: '14px' }} className='butntxt'>Dashboard</span>
+                    </button>
+                <div >
+                    
 
 
                     <div className="Button2" style={{ display: 'flex', marginLeft: '4px' }}>
