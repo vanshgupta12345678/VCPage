@@ -6,16 +6,31 @@ body {
 
 /* Sidebar styling */
 .sidebar {
-    width: 270px; /* Default sidebar width */
-    height: 1584px; /* Full viewport height */
+    overflow-y: scroll;          /* Enable vertical scrolling */
+    width: 270px;                /* Default sidebar width */
+    height: 100vh;               /* Full viewport height */
     background-color: white;
-    position: absolute; /* Fix sidebar to the left of the screen */
-    top: 0; /* Align to top */
-    left: 0; /* Align to left */
+    position: absolute;          /* Fix sidebar to the left of the screen */
+    top: 0;                      /* Align to top */
+    left: 0;                     /* Align to left */
     opacity: 1;
-    transition: all 0.3s ease; /* Smooth transition for responsiveness */
+    transition: all 0.3s ease;   /* Smooth transition for responsiveness */
     z-index: 1;
 }
+
+/* Hide the scrollbar in Webkit browsers (Chrome, Safari, etc.) */
+.sidebar::-webkit-scrollbar {
+    width: 0px;  /* Set the width of the scrollbar to 0 */
+    height: 0px; /* Set the height of the scrollbar to 0 (for horizontal scrollbar) */
+}
+
+/* Hide the scrollbar in Firefox */
+.sidebar {
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+/* For IE/Edge, no need for special styling because they don't show a scrollbar if overflow is set correctly */
+
 
 .i1 {
     padding-left: 10px;
