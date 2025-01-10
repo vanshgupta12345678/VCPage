@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+/* 
+.left-side {
+  background-color: lightblue;
+  width: 270px;
+  height: 1548.84px;
+  position: fixed; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.right-side {
+  margin-left: 270px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list-holidays {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  margin: 48.42px 0;
+} */
+
+/* Basic Styles */
+.app-container {
+  display: flex;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.left-side {
+  background-color: lightblue; /* Just an example */
+  width: 270px;
+  height: 100vh;
+  position: fixed; /* Keep fixed on the screen */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.right-side {
+  margin-left: 270px;
+  flex-grow: 1; /* Ensures right side takes remaining space */
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.content {
+  padding: 20px;
+}
+
+.list-holidays {
+  display: flex;
+  gap: 20px;
+  margin: 48.42px 0;
+  flex-wrap: wrap; /* Wrap items on small screens */
+}
+
+@media (max-width: 1200px) {
+  .left-side {
+    width: 230px; /* Slightly reduce the width for medium screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .right-side {
+    margin-left: 230px; /* Adjust right side margin */
+  }
+
+  .list-holidays {
+    gap: 15px; /* Reduce gap between items */
+  }
+}
+
+@media (max-width: 992px) {
+  .left-side {
+    width: 200px; /* Narrow down the left-side panel */
+  }
+
+  .right-side {
+    margin-left: 200px;
+  }
+
+  .list-holidays {
+    gap: 10px; /* Reduce the gap on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .left-side {
+    width: 100%; /* Full width for mobile */
+    height: auto; /* Auto height for mobile */
+    position: relative; /* Make left-side stack on top */
+  }
+
+  .right-side {
+    margin-left: 0;
+    padding: 10px; /* Reduce padding for mobile */
+  }
+
+  .list-holidays {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .left-side {
+    width: 100%;
+    height: 60px; /* Reduce height for mobile */
+    position: relative;
+  }
+
+  .right-side {
+    margin-left: 0;
+  }
+
+  .list-holidays {
+    flex-direction: column; /* Stack items vertically */
   }
 }

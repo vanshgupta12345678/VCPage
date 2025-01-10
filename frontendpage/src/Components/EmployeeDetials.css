@@ -1,0 +1,202 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+.employee-details{
+    display: flex;
+    width: 1135px;
+    justify-content: space-between;
+    margin: 17.26px 0;
+    border: 2px solid black;
+}
+
+.employees, .employee-attendance, .employee-leave{
+    width: 360px;
+    height: 130px;
+    top: 104.58px;
+    left: 286.59px;
+    gap: 0px;
+    border: 1px;
+    opacity: 0px;
+    background-image: linear-gradient(to left, #7DAFF3,#0363E8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.employee-attendance{
+    background-image: linear-gradient(to left, #EFA55E,#F66B2E);
+}
+
+.employee-leave{
+    background-image: linear-gradient(to left, #49D5A8,#039767);
+}
+
+.employees-data, .attendence-data{
+    width: 110px;
+    height: 59.33px;
+    padding-top: 35px;
+    color: white;
+}
+
+.employees-leaves-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    width: 100%;
+}
+
+.check-in{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.employees p, .text p{
+    padding-top: 7px;
+}
+
+.employees-photo, .attendence-photo{
+    width: 62.34px;
+    height: 62.34px;
+    top: 138.41px;
+    left: 566.12px;
+    border-radius: 31.17px;
+    background-color:#006EBE66;
+    margin-top: 35px;
+    margin-left: 120px;
+}
+
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .employee-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 17px 0;
+    border: 2px solid black;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .employees, .employee-attendance, .employee-leave {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 350px; /* Limiting width for better control */
+    height: 130px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    opacity: 1;
+    color: white;
+  }
+  
+  .employees {
+    background-image: linear-gradient(to left, #7DAFF3, #0363E8);
+  }
+  
+  .employee-attendance {
+    background-image: linear-gradient(to left, #EFA55E, #F66B2E);
+  }
+  
+  .employee-leave {
+    background-image: linear-gradient(to left, #49D5A8, #039767);
+  }
+  
+  .employees-data, .attendance-data {
+    text-align: center;
+  }
+  
+  .employees-leaves-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .check-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .employees p, .attendance p {
+    margin-top: 10px;
+  }
+  
+  .employees-photo, .attendance-photo {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: #006EBE66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  
+  .fas {
+    font-size: 40px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .employee-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .employees, .employee-attendance, .employee-leave {
+      width: 90%;
+      max-width: none;
+      margin-bottom: 20px;
+    }
+  
+    .employees-photo, .attendance-photo {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .employee-details {
+      padding: 10px;
+    }
+  
+    .employees, .employee-attendance, .employee-leave {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .check-in {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .employees p, .attendance p {
+      font-size: 14px;
+    }
+  
+    .employees-photo, .attendance-photo {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .fas {
+      font-size: 25px;
+    }
+  }
+  

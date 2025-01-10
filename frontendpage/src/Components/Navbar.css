@@ -1,0 +1,206 @@
+/* * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    width: 1135px;
+    height: 68px;
+    top: 19.32px;
+    left: 286px;
+    border-radius: 12px;
+    border: 1px solid #dbe0e5;
+    box-shadow: #1b2e5e14;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .text {
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 16px; 
+    line-height: 20.16px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 43.28px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #006ebe66;
+  }
+  
+  .photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #006ebe66;
+  }
+  
+
+  @media (max-width: 768px) {
+    .navbar {
+      width: 100%; 
+      padding: 0 15px; 
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .text {
+      width: 100%;
+      font-size: 14px; 
+      line-height: 18px; 
+      text-align: center;
+      margin-bottom: 10px; 
+    }
+  
+    .icon-photo {
+      width: 100%;
+      justify-content: center; 
+    }
+  
+    .icon, .photo {
+      width: 35px; 
+      height: 35px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 0 10px; 
+    }
+  
+    .text {
+      font-size: 12px; 
+      margin-bottom: 8px; 
+    }
+  
+    .icon, .photo {
+      width: 30px;
+      height: 30px;
+    }
+  }
+   */
+
+   /* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for consistent layout */
+  }
+  
+  body {
+    font-family: 'Outfit', sans-serif; /* Global font setting */
+  }
+  
+  /* Navbar Container */
+  .navbar {
+    width: 100%;
+    max-width: 1135px; /* Ensure it doesn't stretch too much on larger screens */
+    height: 68px;
+    margin: 20px auto; /* Center the navbar horizontally with space on top */
+    border-radius: 12px;
+    border: 1px solid #dbe0e5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Improved shadow effect */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #ffffff; /* Add background color */
+  }
+  
+  /* Text inside the navbar */
+  .text {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20.16px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    padding-right: 10px; /* Prevent text overlap with icons */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Ensures text doesn't overflow */
+    text-overflow: ellipsis; /* Add ellipsis if the text overflows */
+  }
+  
+  /* Container for the icons and photo */
+  .icon-photo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Added gap between icons */
+  }
+  
+  /* Icon styles */
+  .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #006ebe66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #006ebe66;
+  }
+  
+  /* Media Query for smaller screens (tablet and below) */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .text {
+      font-size: 14px; /* Slightly smaller font */
+      line-height: 18px;
+      text-align: center;
+      margin-bottom: 10px; /* Space between text and icons */
+      white-space: normal; /* Allow wrapping for smaller screens */
+    }
+  
+    .icon-photo {
+      width: 100%;
+      justify-content: center; /* Center icons */
+    }
+  
+    .icon, .photo {
+      width: 35px;
+      height: 35px; /* Slightly smaller icons */
+    }
+  }
+  
+  /* Media Query for very small screens (mobile) */
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 10px; /* Further reduce padding */
+    }
+  
+    .text {
+      font-size: 12px; /* Even smaller font */
+      margin-bottom: 8px;
+    }
+  
+    .icon, .photo {
+      width: 30px; /* Smaller icons */
+      height: 30px;
+    }
+  }
+  
