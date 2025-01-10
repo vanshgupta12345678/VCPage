@@ -1,10 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Sidebar from './Components/Sidebar';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <>
-    <h1>Vansh</h1>
+<Sidebar/>
+      {/* <Navbar/> */}
+  
+      
     </>
   );
 }
