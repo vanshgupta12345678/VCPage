@@ -5,9 +5,9 @@ import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <>
-<Sidebar/>
-      {/* <Navbar/> */}
+    <>    <Navbar/> 
+< Sidebar/>
+   
   
       
     </>

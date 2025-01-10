@@ -1,17 +1,13 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-import './Sidebar.css';
+import './Navbar.css';
+
 const Navbar = () => {
     return (
-        <div style={{backgroundColor:'white',width:'1135px',height:'68px'}}>
- <div className="sidebar">
-       
-       </div>
+        <div className='Nav1'>
+            <div className="Size">
+                <p className="birthday-text">Happy Birthday<br/>9 November Vansh Gupta</p>
+            </div>
         </div>
-       
-      
-       
-
     );
 };
 

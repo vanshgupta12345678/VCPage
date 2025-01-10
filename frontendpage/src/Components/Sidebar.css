@@ -1,4 +1,4 @@
-/* Sidebar base styles */
+Sidebar base styles
 body {
     margin: 0;
     padding: 0;
@@ -70,7 +70,16 @@ body {
     margin-top: 30px;
     cursor: pointer;
 }
-
+.Button21 {
+    text-align: center;
+    width: 236px;
+    height: 48px;
+    background-color: rgba(4, 93, 157, 0.2);
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+    cursor: pointer;
+}
 .Button2 {
     text-align: center;
     width: 236px;
@@ -89,11 +98,12 @@ body {
 
 .sidebar-toggle {
     display: none; /* Hide by default */
+    margin-top: -75px;
     position: fixed;
     background-color: #006EBE;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 6px 15px;
     font-size: 10px;
     cursor: pointer;
     z-index: 2;
@@ -124,6 +134,9 @@ body {
     .Button {
         width: 200px; /* Adjust button width */
     }
+    .Button21 {
+        width: 200px; /* Adjust button width */
+    }
 
     .text1 {
         font-size: 24px;
@@ -146,6 +159,9 @@ body {
     }
 
     .Button {
+        width: 160px; /* Further reduce button width */
+    }
+    .Button21 {
         width: 160px; /* Further reduce button width */
     }
 
@@ -193,6 +209,9 @@ body {
     .Button {
         width: 140px; /* Further adjust button width */
     }
+    .Button21 {
+        width: 140px; /* Further adjust button width */
+    }
 
     .text1 {
         font-size: 18px;
@@ -231,4 +250,133 @@ body {
     font-size: 16px;
     font-weight: 400;
     text-decoration-skip-ink: none;
+}
+.line{
+    margin-top: 20px;
+    border-top: 1px solid #9BD0F699;
+    height: 200px;
+
+    /* Social Media Icons Container */
+.social-icons {
+    margin-top: 40px;
+    display: flex;
+/* padding-left: -30px; */
+    gap: 10px;  /* Default gap between icons */
+}
+
+/* Individual Icon Styling */
+.social-icons i {
+    font-size: 35px;  /* Default size for larger screens */
+    transition: all 0.3s ease;  /* Smooth transition on resizing */
+}
+
+/* For medium screens (tablets) */
+@media screen and (max-width: 1024px) {
+    .social-icons {
+        justify-content: space-evenly;
+        gap: 12px;  /* Smaller gap for tablets */
+    }
+
+    .social-icons i {
+        font-size: 30px;  /* Slightly smaller icons on tablets */
+    }
+}
+
+/* For small screens (mobile devices) */
+@media screen and (max-width: 768px) {
+    .social-icons {
+        justify-content: space-evenly;
+        gap: 10px;  /* Smaller gap on mobile */
+    }
+
+    .social-icons i {
+        font-size: 28px;  /* Smaller icons for mobile */
+    }
+}
+
+/* For extra small screens (very small mobile devices) */
+@media screen and (max-width: 480px) {
+    .social-icons {
+        flex-direction: column;  /* Stack icons vertically */
+        align-items: center;
+        gap: 8px;  /* Adjust gap for stacked icons */
+    }
+
+    .social-icons i {
+        font-size: 25px;  /* Further reduce size for very small devices */
+        margin-bottom: 10px;  /* Add margin between stacked icons */
+    }
+}
+}
+
+/* Social Media Icons Container */
+.social-icons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 16px; /* Default gap between icons */
+}
+
+/* General Icon Styling */
+.social-icon {
+    font-size: 35px;  /* Default size for larger screens */
+    transition: all 0.3s ease;  /* Smooth transition on resizing */
+}
+
+/* Facebook Icon */
+.social-icon.facebook {
+    color: #1877F2;  /* Facebook blue */
+}
+
+/* LinkedIn Icon */
+.social-icon.linkedin {
+    color: #4267B2;  /* LinkedIn blue */
+}
+
+/* YouTube Icon */
+.social-icon.youtube {
+    color: #FF0000;  /* YouTube red */
+}
+
+/* Instagram Icon */
+.social-icon.instagram {
+    color: #F30907;  /* Instagram red */
+}
+
+/* For medium screens (tablets) */
+@media screen and (max-width: 1024px) {
+    .social-icons {
+        justify-content: space-evenly;
+        gap: 12px; /* Smaller gap for tablets */
+    }
+
+    .social-icon {
+        font-size: 30px; /* Slightly smaller icons on tablets */
+    }
+}
+
+/* For small screens (mobile devices) */
+@media screen and (max-width: 768px) {
+    .social-icons {
+        justify-content: space-evenly;
+        gap: 10px; /* Smaller gap on mobile */
+    }
+
+    .social-icon {
+        font-size: 28px; /* Smaller icons for mobile */
+    }
+}
+
+/* For extra small screens (very small mobile devices) */
+@media screen and (max-width: 480px) {
+    .social-icons {
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center;
+        gap: 8px; /* Adjust gap for stacked icons */
+    }
+
+    .social-icon {
+        font-size: 25px; /* Further reduce size for very small devices */
+        margin-bottom: 10px; /* Add margin between stacked icons */
+    }
 }
