@@ -5,69 +5,144 @@
     justify-content: flex-start; /* Align items to the left */
     flex-wrap: wrap; /* Allow wrapping of items */
     margin-top: 20px; /* Adds margin at the top */
-    margin-left: 286.59px; /* This ensures there is space from the sidebar */
+    margin-left: 286.59px; /* Default margin-left for larger screens */
 }
 
 /* Base styles for the cards */
-.Card1, .Card2, .Card3 {
+.Card1 {
     border: 1px solid #FFFFFF;
-    background-color: #7DAFF3;
-    width: 360px;
-    height: 130px;
-    margin-top: 14.58px;
+    background-color: #0363E8;
+    width: 360px; /* Default card width */
+    height: 130px; /* Default card height */
+    margin-top: 14.58px; /* Margin between cards */
     border-radius: 12px;
     opacity: 0.9;
+    display: flex; /* Enable flexbox on the card */
+    justify-content: space-between; /* Align items inside the card */
+    align-items: center; /* Vertically center the items */
 }
+.Card2 {
+    box-shadow: 0px 8px 24px 0px #1B2E5E14;
 
-/* For medium screens (tablets) */
-@media screen and (max-width: 1024px) {
+    border: 1px solid #FFFFFF;
+    background-color: #F66B2E;
+    width: 360px; /* Default card width */
+    height: 130px; /* Default card height */
+    margin-top: 14.58px; /* Margin between cards */
+    border-radius: 12px;
+    opacity: 0.9;
+    display: flex; /* Enable flexbox on the card */
+    justify-content: space-between; /* Align items inside the card */
+    align-items: center; /* Vertically center the items */
+}
+.Card3 {
+    box-shadow: 0px 8px 24px 0px #1B2E5E14;
+
+    border: 1px solid #FFFFFF;
+    background-color: #039767;
+    width: 360px; /* Default card width */
+    height: 130px; /* Default card height */
+    margin-top: 14.58px; /* Margin between cards */
+    border-radius: 12px;
+    opacity: 0.9;
+    display: flex; /* Enable flexbox on the card */
+    justify-content: space-between; /* Align items inside the card */
+    align-items: center; /* Vertically center the items */
+}
+/* For screens between 1015px and 1140px */
+@media screen and (max-width: 1140px) and (min-width: 994px) {
     .flex {
-        gap: 15px; /* Reduce the gap between cards */
+        gap: 18px; /* Moderate gap between cards */
+        margin-left: 240px; /* Adjust margin-left for this range of screen sizes */
     }
 
     .Card1, .Card2, .Card3 {
-        width: 280px; /* Reduce the width of the cards on tablets */
-        height: 120px;
+        width: 330px; /* Set a smaller card width */
+        height: 120px; /* Adjust the card height */
+    }
+}
+
+/* For screens between 768px and 1015px (iPad Air Portrait Mode) */
+@media screen and (max-width: 1015px) {
+    .flex {
+        gap: 12px; /* Slightly reduce gap between cards */
+        justify-content: center; /* Center the cards */
+        margin-left: 150px; /* Adjust margin-left for mid-size screens */
     }
 
-    /* Adjust margin-left for smaller screens if needed */
-    .flex {
-        margin-left: 150px; /* Adjust to accommodate smaller screen sizes */
+    .Card1, .Card2, .Card3 {
+        width: 290px; /* Adjust width of cards */
+        height: 120px;
     }
 }
 
 /* For small screens (mobile devices) */
 @media screen and (max-width: 768px) {
     .flex {
-        gap: 10px; /* Further reduce the gap between cards */
+        gap: 10px; /* Further reduce gap between cards */
         justify-content: center; /* Center the cards */
+        margin-left: 20px; /* Adjust for mobile screens */
     }
 
     .Card1, .Card2, .Card3 {
-        width: 250px; /* Reduce the width of cards for mobile */
+        width: 250px; /* Reduce width of cards */
         height: 110px;
-    }
-
-    /* Adjust margin-left for smaller screens */
-    .flex {
-        margin-left: 20px; /* Adjust further for mobile */
     }
 }
 
-/* For very small screens (portrait mobile) */
+/* For screens between 480px and 768px (iPad Air Landscape Mode) */
+@media screen and (max-width: 808px) {
+    .flex {
+        gap: 10px; /* Further reduce gap between cards */
+        justify-content: center; /* Center the cards */
+        margin-left: 20px; /* Adjust for smaller screens */
+    }
+
+    .Card1, .Card2, .Card3 {
+        width: 250px; /* Reduce width of cards */
+        height: 110px;
+    }
+}
+
+/* For very small screens (portrait mobile devices, <= 480px) */
 @media screen and (max-width: 480px) {
     .flex {
+        margin-left: 10px; /* Minimal margin for very small screens */
         gap: 10px; /* Reduce gap further */
         justify-content: center; /* Center the cards */
     }
 
     .Card1, .Card2, .Card3 {
-        width: 220px; /* Even smaller width for very small screens */
-        height: 100px;
+        width: 220px; /* Smaller width for very small screens */
+        height: 100px; /* Adjust height for smaller screens */
     }
+}
 
-    /* Adjust margin-left for very small screens */
-    .flex {
-        margin-left: 10px; /* Minimal margin for very small screens */
-    }
+/* Styling for text inside cards */
+.txt{
+    margin-top: -10px;
+    color: white;
+    width: 110px;
+    height: 28px;
+    margin-top: px;
+    margin-left: 14.71px;
+    gap: 0px;
+    opacity: 0.9;
+}
+
+/* Styling for the logo inside cards */
+.logo {
+    display: flex;
+    justify-content: center; /* Align the logo to the center horizontally */
+    align-items: center; /* Align the logo to the center vertically */
+    margin-right: 20px; /* Move the logo to the right side */
+    height: 100%; /* Ensure it takes the full height of the card */
+}
+
+.logo img {
+    height: 40px; /* Set the height of the logo */
+    width: 40px; /* Ensure the width is the same as height to make it a square */
+    border-radius: 50%; /* This creates the circular shape */
+    border: 2px solid #000; /* Add a black border around the logo */
+    object-fit: cover; /* Ensures the image covers the circle without distorting */
 }
