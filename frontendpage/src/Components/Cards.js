@@ -23,9 +23,9 @@ const Cards= () => {
             </div>
            
 <div style={{textAlign:'center',padding:'10px',color:'white'}}>
-                    <p  style={{fontSize:'20px'}} >10</p>
-                    <p  style={{fontSize:'20px'}} >10</p>
-                    <p  style={{fontSize:'20px'}} >1</p>
+                    <p  style={{fontSize:'14px'}} >10</p>
+                    <p  style={{fontSize:'14px'}} >10</p>
+                    <p  style={{fontSize:'15px'}} >1</p>
                 </div>
            </div>
         </div>
