@@ -129,7 +129,14 @@
     gap: 0px;
     opacity: 0.9;
 }
-
+.C1{
+    background-Color:black;
+    margin-left: 290px;
+    margin-top: 20px;
+    width:'667px';
+height:'336px';
+margin-Top:'10rem';
+}
 /* Styling for the logo inside cards */
 .logo {
     display: flex;

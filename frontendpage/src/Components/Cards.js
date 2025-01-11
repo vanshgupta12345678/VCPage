@@ -2,7 +2,7 @@ import React from 'react';
 import './Card.css';
 import logo from '../Components/icon.jpg';
 const Cards= () => {
-    return (
+    return (<>
         <div className='flex'>
            <div className='Card1'>
 <p className='txt'>Employees<br/>50/50</p>
@@ -28,7 +28,15 @@ const Cards= () => {
                     <p  style={{fontSize:'15px'}} >1</p>
                 </div>
            </div>
-        </div>
+           </div>
+
+
+<div style={{width:'667px',height:'337px'}} className='C1'>
+vansh
+</div>
+        
+        
+        </>
     );
 };
 

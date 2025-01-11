@@ -10,7 +10,7 @@ body {
     width: 270px;                /* Default sidebar width */
     height: 100vh;               /* Full viewport height */
     background-color: white;
-    position: absolute;          /* Fix sidebar to the left of the screen */
+    position: fixed;          /* Fix sidebar to the left of the screen */
     top: 0;                      /* Align to top */
     left: 0;                     /* Align to left */
     opacity: 1;
