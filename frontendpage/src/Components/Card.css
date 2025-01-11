@@ -75,13 +75,25 @@
         height: 120px;
     }
 }
-
+.C1{
+    background-Color:black;
+    margin-left: 290px;
+    margin-top: 20px;
+    width:'667px';
+height:'336px';
+margin-Top:'10rem';
+}
 /* For small screens (mobile devices) */
 @media screen and (max-width: 768px) {
     .flex {
         gap: 10px; /* Further reduce gap between cards */
         justify-content: center; /* Center the cards */
         margin-left: 20px; /* Adjust for mobile screens */
+    }
+    .C1{
+        margin-left: 20px;
+        width: 250px;
+        height: 110px;
     }
 
     .Card1, .Card2, .Card3 {
@@ -100,6 +112,11 @@
 
     .Card1, .Card2, .Card3 {
         width: 250px; /* Reduce width of cards */
+        height: 110px;
+    }
+    .C1{
+        margin-left: 20px;
+        width: 250px;
         height: 110px;
     }
 }
@@ -129,14 +146,7 @@
     gap: 0px;
     opacity: 0.9;
 }
-.C1{
-    background-Color:black;
-    margin-left: 290px;
-    margin-top: 20px;
-    width:'667px';
-height:'336px';
-margin-Top:'10rem';
-}
+
 /* Styling for the logo inside cards */
 .logo {
     display: flex;

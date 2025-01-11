@@ -28,14 +28,8 @@ const Cards= () => {
                     <p  style={{fontSize:'15px'}} >1</p>
                 </div>
            </div>
-           </div>
 
-
-<div style={{width:'667px',height:'337px'}} className='C1'>
-vansh
-</div>
-        
-        
+        </div>
         </>
     );
 };
