@@ -76,6 +76,7 @@ body {
 
 /* Button styling */
 .Button {
+    border: none;
     text-align: center;
     width: 236px;
     height: 48px;
@@ -114,7 +115,7 @@ body {
 .sidebar-toggle {
     display: none; /* Hide by default */
     margin-top: -75px;
-    position: fixed;
+    position: absolute;
     background-color: #006EBE;
     color: white;
     border: none;

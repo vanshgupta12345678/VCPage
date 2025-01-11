@@ -1,0 +1,73 @@
+/* Base styles for the flex container */
+.flex {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; /* Align items to the left */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    margin-top: 20px; /* Adds margin at the top */
+    margin-left: 286.59px; /* This ensures there is space from the sidebar */
+}
+
+/* Base styles for the cards */
+.Card1, .Card2, .Card3 {
+    border: 1px solid #FFFFFF;
+    background-color: #7DAFF3;
+    width: 360px;
+    height: 130px;
+    margin-top: 14.58px;
+    border-radius: 12px;
+    opacity: 0.9;
+}
+
+/* For medium screens (tablets) */
+@media screen and (max-width: 1024px) {
+    .flex {
+        gap: 15px; /* Reduce the gap between cards */
+    }
+
+    .Card1, .Card2, .Card3 {
+        width: 280px; /* Reduce the width of the cards on tablets */
+        height: 120px;
+    }
+
+    /* Adjust margin-left for smaller screens if needed */
+    .flex {
+        margin-left: 150px; /* Adjust to accommodate smaller screen sizes */
+    }
+}
+
+/* For small screens (mobile devices) */
+@media screen and (max-width: 768px) {
+    .flex {
+        gap: 10px; /* Further reduce the gap between cards */
+        justify-content: center; /* Center the cards */
+    }
+
+    .Card1, .Card2, .Card3 {
+        width: 250px; /* Reduce the width of cards for mobile */
+        height: 110px;
+    }
+
+    /* Adjust margin-left for smaller screens */
+    .flex {
+        margin-left: 20px; /* Adjust further for mobile */
+    }
+}
+
+/* For very small screens (portrait mobile) */
+@media screen and (max-width: 480px) {
+    .flex {
+        gap: 10px; /* Reduce gap further */
+        justify-content: center; /* Center the cards */
+    }
+
+    .Card1, .Card2, .Card3 {
+        width: 220px; /* Even smaller width for very small screens */
+        height: 100px;
+    }
+
+    /* Adjust margin-left for very small screens */
+    .flex {
+        margin-left: 10px; /* Minimal margin for very small screens */
+    }
+}

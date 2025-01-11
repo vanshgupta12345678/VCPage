@@ -3,36 +3,66 @@
     margin-right: 10px;
     margin-left: 286px; /* Fixed margin between the sidebar and navbar */
     background-color: white;
-    width: auto; /* Make the navbar width responsive, subtract the sidebar width */
+    width: auto; /* Make the navbar width responsive */
     height: 68px;
     margin-top: 28px;
     border-radius: 12px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for styling */
     display: flex;
     align-items: center;
-    justify-content: center; /* Center items horizontally */
+    justify-content: space-between; /* Space between birthday text, bell icon, and logo */
     padding: 0 20px; /* Add some padding on the left and right */
 }
-.birthday-text{
-    font-family: 'Outfit,sans-serif';
-font-size: 16px;
-font-weight: 400;
-line-height: 20.16px;
-letter-spacing: 0.02em;
-text-align: center;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #000000;
 
+/* Birthday text styles */
+.birthday-text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    flex-grow: 1; /* Make the birthday text take available space */
 }
 
 /* This class controls the content within the navbar */
 .Size {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: space-between; /* Distribute space between text, bell icon, and logo */
     width: 100%;
-    text-align: center;
+}
+
+/* Bell Icon Styles */
+.bell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #006EBE; /* Set background color of the rectangle */
+    width: 40px; /* Set the width of the rectangle */
+    height: 40px; /* Set the height of the rectangle */
+    border-radius: 6px; /* Rounded corners for the rectangle */
+}
+
+.bell svg {
+    color: white; /* Set bell icon color to white */
+    font-size: 24px; /* Size the bell icon */
+}
+
+/* Logo Styles */
+.logo {
+    margin-left: 20px; /* Add margin between the bell icon and logo */
+}
+
+.logo img {
+    height: 40px; /* Set the height of the logo */
+    width: 40px; /* Ensure the width is the same as height to make it a square */
+    border-radius: 50%; /* This creates the circular shape */
+    border: 2px solid #000; /* Add a black border around the logo */
+    object-fit: cover; /* Ensures the image covers the circle without distorting */
 }
 
 /* For medium screens (tablets) */
@@ -45,7 +75,7 @@ color: #000000;
     }
 
     .Size {
-        justify-content: center; /* Ensure content is still centered */
+        justify-content: space-between; /* Ensure space between items on smaller screens */
     }
 }
 
@@ -59,7 +89,7 @@ color: #000000;
     }
 
     .Size {
-        justify-content: center; /* Ensure content is still centered */
+        justify-content: space-between; /* Ensure content is spaced correctly */
     }
 }
 
@@ -73,7 +103,7 @@ color: #000000;
     }
 
     .Size {
-        justify-content: center; /* Ensure content is still centered */
+        justify-content: space-between; /* Ensure content is spaced correctly */
     }
 }
 
