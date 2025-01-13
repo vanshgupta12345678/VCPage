@@ -8,18 +8,25 @@
     margin-top: 30px;
     align-items: flex-start;    /* Align items to the top */
 }
-
+td[colSpan="3"] {
+    font-weight: bold;
+    color: #007BFF; /* Change the text color */
+    cursor: pointer; /* Make it look clickable */
+    text-decoration: underline;
+}
 /* Styling for .box */
 .box {
     width: 667.48px;            /* Default width for larger screens */
-    height: 366.81px;
+    height: 370.81px;
     opacity: 1;
-    border: 1px solid black;
+    border: 1px solid #F4F7FA;
+    /* border: 1px solid F4F7FA; */
     box-sizing: border-box; /* Ensure that padding and borders are considered in the width */
-    padding: 15px;
+    /* padding: 15px; */
     margin-left: 290px;         /* You can remove or adjust margin-left as needed */
     border-radius: 10px;
-    margin-bottom: 20px;     /* Space below the box */
+    margin-bottom: 20px;
+        /* Space below the box */
 }
 
 /* Styling for .box2 */
@@ -91,7 +98,7 @@
         font-size: 12px;
     }
 
-    th, td {
+     td {
         padding: 8px;
     }
 
@@ -154,7 +161,9 @@ html, body {
     width: 667.48px;            /* Default width for larger screens */
     height: 366.81px;
     opacity: 1;
-    border: 1px solid black;
+    /* border: 1px solid red;
+     */
+     border: 1px solid #F4F7FA; background-color: #ffffff;
     box-sizing: border-box; /* Ensure that padding and borders are considered in the width */
     padding: 15px;
     margin-left: 290px;         /* You can remove or adjust margin-left as needed */
@@ -166,7 +175,8 @@ html, body {
 .box2 {
     width: 400px;             /* Default fixed width for larger screens */
     height: 366.81px;
-    border: 1px solid black;
+    border: 1px solid #F4F7FA;
+    background-color: #ffffff;
     box-sizing: border-box;
     padding: 15px;
     margin-bottom: 20px;      /* Space below the box */
@@ -271,4 +281,16 @@ html, body {
 /* Optional: To prevent horizontal scrolling on small screens */
 html, body {
     overflow-x: hidden;
+}
+.date{
+    margin-bottom: 20px;
+width: 370.68px;
+height:60.35px;
+top: 529.52px;
+border-radius: 12px;
+left: 1008.13px;
+gap: 0px;
+opacity: 0px;
+background-color: #14A5FC;
+
 }
