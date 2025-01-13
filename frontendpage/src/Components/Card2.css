@@ -1,0 +1,274 @@
+/* General Styling for the Box Container */
+/* General Styling for the Box Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;             /* Allows wrapping to the next line on small screens */
+    justify-content: space-between; /* Distribute space between the items */
+    gap: 20px;                   /* Provides space between the items */
+    margin-top: 30px;
+    align-items: flex-start;    /* Align items to the top */
+}
+
+/* Styling for .box */
+.box {
+    width: 667.48px;            /* Default width for larger screens */
+    height: 366.81px;
+    opacity: 1;
+    border: 1px solid black;
+    box-sizing: border-box; /* Ensure that padding and borders are considered in the width */
+    padding: 15px;
+    margin-left: 290px;         /* You can remove or adjust margin-left as needed */
+    border-radius: 10px;
+    margin-bottom: 20px;     /* Space below the box */
+}
+
+/* Styling for .box2 */
+.box2 {
+    width: 400px;             /* Default fixed width for larger screens */
+    height: 366.81px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 20px;      /* Space below the box */
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+/* Media Query for screens smaller than 1040px */
+@media (max-width: 1040px) {
+    .box {
+        width: 50%;             /* Reduce width to 50% for medium screens */
+    }
+
+    .box2 {
+        width: 45%;             /* Adjust width of second box for medium screens */
+    }
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stack the items vertically on smaller screens */
+        align-items: center;    /* Center the items horizontally */
+    }
+
+    .box, .box2 {
+        width: 80%;             /* Adjust width for smaller screens */
+        margin-left: auto;      /* Center items on smaller screens */
+        margin-right: auto;     /* Center items on smaller screens */
+        margin-top: 20px;       /* Add margin to space out the boxes */
+    }
+
+    /* Ensure the boxes act as cards */
+    .box, .box2 {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for card-like effect */
+        border-radius: 10px; /* Round the corners */
+        padding: 20px; /* Add padding inside the cards */
+    }
+}
+
+/* Media Query for very small screens (480px and below) */
+@media (max-width: 480px) {
+    .card-container {
+        flex-direction: column; /* Stack vertically for very small screens */
+    }
+
+    .box, .box2 {
+        width: 95%;             /* Further adjust width for very small screens */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;       /* Reduce top margin for very small screens */
+    }
+
+    /* Adjust font sizes for small screens */
+    .box div, .box2 div {
+        font-size: 12px;
+    }
+
+    /* Ensure the table inside the box is responsive */
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    /* Center table content */
+    td {
+        text-align: center;
+    }
+}
+
+/* Table and alignment adjustments */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 20px; /* Add gap between rows (20px) */
+}
+
+th, td {
+    padding: 12px; /* Add padding inside cells */
+    border-bottom: 1px solid #ddd; /* Add a bottom border to cells for visual separation */
+}
+
+th {
+    text-align: left; /* Align header text to the left */
+    font-weight: bold;
+}
+
+td:nth-child(1) {
+    text-align: left;  /* Align first column to the left */
+}
+
+td:nth-child(2) {
+    text-align: center;  /* Align second column to the center */
+}
+
+td:nth-child(3) {
+    text-align: right;  /* Align third column to the right */
+}
+
+/* Optional: Table hover effect */
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Optional: To prevent horizontal scrolling on small screens */
+html, body {
+    overflow-x: hidden;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;             /* Allows wrapping to the next line on small screens */
+    justify-content: space-between; /* Distribute space between the items */
+    gap: 20px;                   /* Provides space between the items */
+    margin-top: 30px;
+    align-items: flex-start;    /* Align items to the top */
+}
+
+/* Styling for .box */
+.box {
+    width: 667.48px;            /* Default width for larger screens */
+    height: 366.81px;
+    opacity: 1;
+    border: 1px solid black;
+    box-sizing: border-box; /* Ensure that padding and borders are considered in the width */
+    padding: 15px;
+    margin-left: 290px;         /* You can remove or adjust margin-left as needed */
+    border-radius: 10px;
+    margin-bottom: 20px;     /* Space below the box */
+}
+
+/* Styling for .box2 */
+.box2 {
+    width: 400px;             /* Default fixed width for larger screens */
+    height: 366.81px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 20px;      /* Space below the box */
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+/* Media Query for screens smaller than 1040px */
+@media (max-width: 1040px) {
+    .box {
+        width: 50%;             /* Reduce width to 50% for medium screens */
+    }
+
+    .box2 {
+        width: 45%;             /* Adjust width of second box for medium screens */
+    }
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stack the items vertically on smaller screens */
+        align-items: center;    /* Center the items horizontally */
+    }
+
+    .box, .box2 {
+        width: 80%;             /* Adjust width for smaller screens */
+        margin-left: auto;      /* Center items on smaller screens */
+        margin-right: auto;     /* Center items on smaller screens */
+        margin-top: 20px;       /* Add margin to space out the boxes */
+    }
+
+    /* Ensure the boxes act as cards */
+    .box, .box2 {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for card-like effect */
+        border-radius: 10px; /* Round the corners */
+        padding: 20px; /* Add padding inside the cards */
+    }
+}
+
+/* Media Query for very small screens (480px and below) */
+@media (max-width: 480px) {
+    .card-container {
+        flex-direction: column; /* Stack vertically for very small screens */
+    }
+
+    .box, .box2 {
+        width: 95%;             /* Further adjust width for very small screens */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;       /* Reduce top margin for very small screens */
+    }
+
+    /* Adjust font sizes for small screens */
+    .box div, .box2 div {
+        font-size: 12px;
+    }
+
+    /* Ensure the table inside the box is responsive */
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    /* Center table content */
+    td {
+        text-align: center;
+    }
+}
+
+/* Media Query for screens smaller than 768px specifically targeting .box2 */
+@media (max-width: 768px) {
+    .box2 {
+        margin-left:auto;   /* Center box2 for small screens */
+    }
+}
+
+/* Media Query for screens smaller than 1000px */
+@media (max-width: 1368px) {
+    .box2 {
+        /* margin-left: 40px; */
+        margin-right: auto;  /* Center box2 for medium screens */
+    }
+}
+
+/* Media Query for screens larger than 1000px but smaller than 1427px */
+@media (max-width: 1427px) {
+    .box2 {
+        margin-left: auto;  /* Center box2 for medium-sized screens */
+    }
+}
+@media (max-width: 3000px) {
+    .box2 {
+        margin-right: auto;  /* Center box2 for medium-sized screens */
+    }
+}
+
+/* Optional: To prevent horizontal scrolling on small screens */
+html, body {
+    overflow-x: hidden;
+}
