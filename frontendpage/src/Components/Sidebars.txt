@@ -347,3 +347,290 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+/* Styling for .box */
+.box {
+    width: 667.48px;
+    height: 366.81px;
+    margin-top: 30px;
+    margin-left: 286px;
+    gap: 0px;
+    opacity: 1;
+    border: 1px solid black;
+    box-sizing: border-box; /* Ensure that padding and borders are considered in the width */
+}
+
+.box2 {
+    width: 435px;
+    height: 366.81px;
+    gap: 0px;
+    border-radius: 12px 0px 0px 0px;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: 30px;
+    box-sizing: border-box; /* Ensure that padding and borders are considered in the width */
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .box, .box2 {
+        width: 80%; /* Adjust width for smaller screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box2 {
+        margin-left: auto;
+    }
+
+    .box {
+        margin-top: 20px;
+    }
+
+    .box2 {
+        margin-top: 20px;
+    }
+
+    /* Ensure boxes stack vertically */
+    .box, .box2 {
+        display: block;
+        width: 100%;
+    }
+
+    /* Add some padding inside the boxes */
+    .box, .box2 {
+        padding: 10px;
+    }
+
+    /* Adjust the content */
+    .box div, .box2 div {
+        font-size: 14px;
+    }
+}
+
+/* Media Query for very small screens (480px and below) */
+@media (max-width: 480px) {
+    .box, .box2 {
+        width: 95%; /* Further adjust width for very small screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Stacking the boxes vertically on small screens */
+    .box, .box2 {
+        margin-top: 10px; /* Adjust top margin for small screens */
+    }
+
+    /* Adjust font sizes and other elements for smaller screens */
+    .box div, .box2 div {
+        font-size: 12px;
+    }
+
+    /* Make sure content in the table is also responsive */
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+// // import React from 'react';
+// // import './Card.css';
+// // import logo from '../Components/icon.jpg';
+// // import './Card2.css'
+// // const Card2 = () => {
+// //     return (<>
+
+// //         <div style={{ display: 'flex' }}>
+// //             <div className='box'>
+
+
+// //                 <tr>
+// //                     <td>
+// //                         Vansh
+// //                     </td>
+// //                 </tr>
+// //                 <tr>
+// //                     <td>
+// //                         Vansh
+// //                     </td>
+// //                     <td style={{ textAlign: 'center', alignItems: 'center' }}>
+// //                         vanshs
+// //                     </td>
+// //                     <td>
+// //                         Vansh
+// //                     </td>
+// //                 </tr>
+// //             </div>
+// //             <div className='box2'>vansh2
+// //             </div>
+// //         </div>
+
+
+// //     </>
+// //     );
+// // };
+
+// // export default Card2;
+// import React from 'react';
+// import './Card.css';
+// import './Card2.css';
+
+// const Card2 = () => {
+//     return (
+//         <>
+//             <div style={{ display: 'flex', flexDirection: 'row' }}>
+//                 <div className='box'>
+//                     {/* Corrected Table Structure */}
+//                     <table style={{ width: '100%' }}>
+//                         <thead>
+//                             <tr>
+//                                 <th style={{ textAlign: 'left', padding: '15px' }}>
+//                                     Employee List
+//                                 </th>
+//                             </tr>
+//                         </thead>
+//                         <tbody>
+
+//                             <tr>
+//                                 <td style={{ paddingLeft: '20px', padding: '15px' }}>
+//                                     Vansh
+//                                 </td>
+//                                 <td style={{ textAlign: 'center' }}>
+//                                     Vansh
+//                                 </td>
+//                                 <td style={{ textAlign: 'right', paddingRight: '2rem' }}>
+//                                     Vansh
+//                                 </td>
+
+//                             </tr> <tr>
+//                                 <td style={{ paddingLeft: '20px', padding: '15px' }}>
+//                                     Vansh
+//                                 </td>
+//                                 <td style={{ textAlign: 'center' }}>
+//                                     Vansh
+//                                 </td>
+//                                 <td style={{ textAlign: 'right', paddingRight: '20px', paddingRight: '8rem' }}>
+//                                     Vansh
+//                                 </td>
+//                             </tr> <tr>
+//                                 <td style={{ paddingLeft: '20px', padding: '15px' }}>
+//                                     Vansh
+//                                 </td>
+//                                 <td style={{ textAlign: 'center' }}>
+//                                     Vansh
+//                                 </td>
+//                                 <td style={{ textAlign: 'right', paddingRight: '20px', paddingRight: '8rem' }}>
+//                                     Vansh
+//                                 </td>
+//                             </tr> <tr>
+//                                 <td style={{ paddingLeft: '20px', padding: '15px' }}>
+//                                     Vansh
+//                                 </td>
+//                                 <td style={{ textAlign: 'center' }}>
+//                                     Vansh
+//                                 </td>
+//                                 <td style={{ textAlign: 'right', paddingRight: '20px', paddingRight: '8rem' }}>
+//                                     Vansh
+//                                 </td>
+//                             </tr>
+//                         </tbody>
+//                     </table>
+//                 </div>
+
+//                 <div className='box2'>
+//                     vansh2
+//                 </div>
+//             </div>
+//         </>
+//     );
+// };
+
+// export default Card2;
+import React from 'react';
+import './Card.css';
+import './Card2.css';
+
+const Card2 = () => {
+    return (
+        <>
+            <div style={{ display: 'flex', flexDirection: 'row' }}>
+                <div className='box'>
+                    {/* Corrected Table Structure */}
+                    <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                        <thead>
+                            <tr>
+                                <th style={{ textAlign: 'left', padding: '15px', borderBottom: '1px solid #ccc' }}>
+                                    Employee List
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style={{ paddingLeft: '20px', padding: '15px', textAlign: 'left' }}>
+                                    Name
+                                </td>
+                                <td style={{ textAlign: 'center', padding: '15px', paddingRight: '6rem' }}>
+                                    Employee ID
+                                </td>
+                                <td style={{ textAlign: 'right', paddingRight: '20px', padding: '15px' }}>
+                                    Profile
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style={{ paddingLeft: '20px', padding: '15px', textAlign: 'left' }}>
+                                    Vansh
+                                </td>
+                                <td style={{ textAlign: 'center', padding: '15px', paddingRight: '6rem' }}>
+                                    Vansh
+                                </td>
+                                <td style={{ textAlign: 'right', paddingRight: '20px', padding: '15px' }}>
+                                    Vansh
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style={{ paddingLeft: '20px', padding: '15px', textAlign: 'left' }}>
+                                    Vansh
+                                </td>
+                                <td style={{ textAlign: 'center', padding: '15px', paddingRight: '6rem' }}>
+                                    Vansh
+                                </td>
+                                <td style={{ textAlign: 'right', paddingRight: '20px', padding: '15px' }}>
+                                    Vansh
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style={{ paddingLeft: '20px', padding: '15px', textAlign: 'left' }}>
+                                    Vansh
+                                </td>
+                                <td style={{ textAlign: 'center', padding: '15px', paddingRight: '6rem' }}>
+                                    Vansh
+                                </td>
+                                <td style={{ textAlign: 'right', paddingRight: '20px', padding: '15px' }}>
+                                    Vansh
+                                </td>
+                            </tr>  <tr>
+                                <td style={{ paddingLeft: '20px', padding: '15px', textAlign: 'left' }}>
+                                    Vansh
+                                </td>
+                                <td style={{ textAlign: 'center', padding: '15px', paddingRight: '6rem' }}>
+                                    Vansh
+                                </td>
+                                <td style={{ textAlign: 'right', paddingRight: '20px', padding: '15px' }}>
+                                    Vansh
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className='box2'>
+                    vanshgyuaoaggu
+                </div>
+            </div>
+        </>
+    );
+};
+
+export default Card2;
