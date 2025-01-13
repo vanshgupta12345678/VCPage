@@ -35,13 +35,10 @@ const Card2 = () => {
                                 <td>Vansh</td>
                                 <td>Vansh</td>
                             </tr>
-                            <tr>
-                                <td style={{ textAlign: 'center' }} colSpan="3" >
-                                    View All Employees
-                                </td>
-                            </tr>
+                            
                         </tbody>
                     </table>
+                   
                 </div>
 
                 <div className='box2'>
@@ -59,23 +56,23 @@ const Card2 = () => {
                         <div style={{ color: 'white', fontSize: '30px', padding: '10px' }}>
                             <FaCalendarAlt />
                         </div>
-                        <div style={{ marginTop: '10px',color:'white' }}>
-                            Diwali<br/>Mon 20 November 2024
+                        <div style={{ marginTop: '10px', color: 'white' }}>
+                            Diwali<br />Mon 20 November 2024
                         </div>
                     </div>
                     <div className='date' style={{ display: 'flex' }}>
                         <div style={{ color: 'white', fontSize: '30px', padding: '10px' }}>
                             <FaCalendarAlt />
                         </div>
-                        <div style={{ marginTop: '10px',color:'white' }}>
-                            Diwali<br/>Mon 20 November 2024
+                        <div style={{ marginTop: '10px', color: 'white' }}>
+                            Diwali<br />Mon 20 November 2024
                         </div>
                     </div><div className='date' style={{ display: 'flex' }}>
                         <div style={{ color: 'white', fontSize: '30px', padding: '10px' }}>
                             <FaCalendarAlt />
                         </div>
-                        <div style={{ marginTop: '10px',color:'white' }}>
-                            Diwali<br/>Mon 20 November 2024
+                        <div style={{ marginTop: '10px', color: 'white' }}>
+                            Diwali<br />Mon 20 November 2024
                         </div>
                     </div>
                 </div>
