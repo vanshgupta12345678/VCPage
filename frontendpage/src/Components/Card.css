@@ -11,7 +11,7 @@
 /* Base styles for the cards */
 .Card1 {
     border: 1px solid #FFFFFF;
-    background-color: #0363E8;
+    background:linear-gradient(to left, #7DAFF3, #0363E8);
     width: 360px; /* Default card width */
     height: 130px; /* Default card height */
     margin-top: 14.58px; /* Margin between cards */
@@ -25,7 +25,7 @@
     box-shadow: 0px 8px 24px 0px #1B2E5E14;
 
     border: 1px solid #FFFFFF;
-    background-color: #F66B2E;
+    background:linear-gradient(to left, #EFA55E, #F66B2E);
     width: 360px; /* Default card width */
     height: 130px; /* Default card height */
     margin-top: 14.58px; /* Margin between cards */
@@ -39,7 +39,7 @@
     box-shadow: 0px 8px 24px 0px #1B2E5E14;
 
     border: 1px solid #FFFFFF;
-    background-color: #039767;
+    background:linear-gradient(to left,#49D5A8, #039767);
     width: 360px; /* Default card width */
     height: 130px; /* Default card height */
     margin-top: 14.58px; /* Margin between cards */

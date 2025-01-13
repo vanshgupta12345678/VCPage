@@ -258,6 +258,7 @@ html, body {
     }
 }
 
+
 /* Media Query for screens smaller than 1000px */
 @media (max-width: 1368px) {
     .box2 {

@@ -239,7 +239,7 @@ const Cards = () => {
             />
           </div>
         </div>
-        <div className="Card3" style={{fontSize:'20px'}}>
+        <div className="Card3" style={{fontSize:'16px'}}>
           <div style={{ display: "block", padding: "10px" }}>
             <p style={{ color: "white" }}>Check In</p>
             <p style={{ color: "white" }}>Check Out</p>
@@ -247,9 +247,9 @@ const Cards = () => {
           </div>
 
           <div style={{ textAlign: "center", padding: "10px", color: "white" }}>
-            <p style={{ fontSize: "20px" }}>{attendanceData.checkIn}</p>
-            <p style={{ fontSize: "20px" }}>{attendanceData.checkOut}</p>
-            <p style={{ fontSize: "20px" }}>{attendanceData.leaves}</p>
+            <p style={{ fontSize: "16px" }}>{attendanceData.checkIn}</p>
+            <p style={{ fontSize: "16px" }}>{attendanceData.checkOut}</p>
+            <p style={{ fontSize: "16px" }}>{attendanceData.leaves}</p>
           </div>
         </div>
       </div>

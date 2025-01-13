@@ -29,6 +29,7 @@ import logo from '../Components/icon.jpg'; // Add your logo image path here
 
 const Navbar = () => {
     const [name, setUsername] = useState('');
+    const [dob, setDob] = useState('');
     const [error, setError] = useState(null);
 
     // Function to fetch username from Firestore
@@ -40,7 +41,8 @@ const Navbar = () => {
 
             if (docSnap.exists()) {
                 const data = docSnap.data();
-                setUsername(data.Name); // Assuming "Name" is the field in your Firestore document
+                setUsername(data.Name); 
+                setDob(data.DOB);
             } else {
                 console.log("No attendance data found for this user.");
             }
@@ -60,7 +62,7 @@ const Navbar = () => {
                 {/* Birthday Text */}
                 <p className="birthday-text" style={{ fontSize: '16px' }}>
                     Happy Birthday<br />
-                    {name ? `9 November ${name}` : 'Loading...'}
+                    {name ? `${dob} ${name}` : 'Loading...'}
                 </p>
 
                 {/* Bell Icon */}
