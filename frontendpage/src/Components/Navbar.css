@@ -47,6 +47,12 @@
     border-radius: 6px; /* Rounded corners for the rectangle */
 }
 
+/* .logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 53px;
+} */
+
 .bell svg {
     color: white; /* Set bell icon color to white */
     font-size: 24px; /* Size the bell icon */
@@ -61,7 +67,6 @@
     height: 40px; /* Set the height of the logo */
     width: 40px; /* Ensure the width is the same as height to make it a square */
     border-radius: 50%; /* This creates the circular shape */
-    border: 2px solid #000; /* Add a black border around the logo */
     object-fit: cover; /* Ensures the image covers the circle without distorting */
 }
 
