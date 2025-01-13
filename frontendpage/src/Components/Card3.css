@@ -1,0 +1,86 @@
+/* Card3 Styles */
+.Crad3 {
+    width: 667.25px;
+    height: 313.92px;
+    margin-top: 20.37px;
+    border-radius: 12px 0px 0px 0px;
+    border: 1px solid #DBE0E5;
+    box-shadow: 0px 8px 24px 0px #1B2E5E14;
+    background-color: #ffffff;
+    padding: 20px; /* Added padding for better content spacing */
+    opacity: 1; /* Make it visible */
+}
+
+.Crad32 {
+    width: 667.25px;
+    height: 460.16px;
+    margin-top: 20.61px;
+    border-radius: 12px 0px 0px 0px;
+    border: 1px solid #DBE0E5;
+    background-color: #ffffff;
+    padding: 20px; /* Added padding for better content spacing */
+    opacity: 1; /* Make it visible */
+}
+
+.div1 {
+    width: 627.51px;
+    height: 174px;
+    margin-top: 20.63px;
+    margin-left: 19.71px;
+    background-color: #E6F5FF;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.txt1 {
+    font-family: Outfit, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #000; /* Ensure text color is visible */
+    opacity: 1; /* Make it visible */
+}
+
+/* Card4 Styles */
+.card4 {
+    width: 435px;
+    height: 793.58px;
+    margin-top: 0.19px;
+    background-color: #ffffff;
+    border: 1px solid #DBE0E5;
+    box-shadow: 0px 8px 24px 0px #1B2E5E14;
+    padding: 20px;
+    opacity: 1; /* Make it visible */
+}
+
+/* Flex Container to align Crad3 and card4 side by side */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Optional Media Query for smaller screens */
+@media (max-width: 768px) {
+    .Crad3, .Crad32, .card4 {
+        width: 100%; /* Set width to 100% for smaller screens */
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px;
+    }
+
+    .txt1 {
+        font-size: 18px;
+    }
+
+    .div1 {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}
