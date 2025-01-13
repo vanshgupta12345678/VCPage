@@ -140,7 +140,7 @@ const Cards = () => {
   });
   const [error, setError] = useState(null);
 
-  const userId = "UHsZ0thvb9hrN7P3sUZf";
+  const userId = "Pr3XnIy8GB4ynS4NBpHN";
   const userId2 = "sBUgTTi5AE6aJdoudDIB";
 
   // Fetch the number of employees from Firestore on component mount
@@ -196,7 +196,7 @@ const Cards = () => {
     <>
       <div className="flex">
         <div className="Card1" >
-          <p className="txt">
+          <p className="txt" style={{fontSize:'22px'}}>
             Employees
             <br />
             {totalEmployees}/50 {/* Display the number of employees */}
@@ -210,7 +210,7 @@ const Cards = () => {
           </div>
         </div>
         <div className="Card2">
-          <p className="txt">
+          <p className="txt" style={{fontSize:'22px'}}>
             Employee
             <br />
             Attendance
@@ -239,17 +239,17 @@ const Cards = () => {
             />
           </div>
         </div>
-        <div className="Card3">
+        <div className="Card3" style={{fontSize:'20px'}}>
           <div style={{ display: "block", padding: "10px" }}>
-            <p style={{ color: "white" }}>CheckIn</p>
-            <p style={{ color: "white" }}>CheckOut</p>
+            <p style={{ color: "white" }}>Check In</p>
+            <p style={{ color: "white" }}>Check Out</p>
             <p style={{ color: "white" }}>Leaves</p>
           </div>
 
           <div style={{ textAlign: "center", padding: "10px", color: "white" }}>
-            <p style={{ fontSize: "14px" }}>{attendanceData.checkIn}</p>
-            <p style={{ fontSize: "14px" }}>{attendanceData.checkOut}</p>
-            <p style={{ fontSize: "15px" }}>{attendanceData.leaves}</p>
+            <p style={{ fontSize: "20px" }}>{attendanceData.checkIn}</p>
+            <p style={{ fontSize: "20px" }}>{attendanceData.checkOut}</p>
+            <p style={{ fontSize: "20px" }}>{attendanceData.leaves}</p>
           </div>
         </div>
       </div>

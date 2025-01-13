@@ -21,7 +21,7 @@ const Card2 = () => {
                                 <td>Profile</td>
                             </tr>
                             <tr>
-                                <td>Vansh</td>
+                                <td style={{fontSize:"16px"}}>Vansh</td>
                                 <td>Vansh</td>
                                 <td style={{ textAlign: 'right', paddingLeft: '4rem' }}>Vansh</td>
                             </tr>

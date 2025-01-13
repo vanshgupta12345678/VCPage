@@ -35,7 +35,7 @@ const Navbar = () => {
     const fetchUsername = async () => {
         try {
             const db = getFirestore(app);
-            const docRef = doc(db, "faculty", "UHsZ0thvb9hrN7P3sUZf"); // Specify the document ID here
+            const docRef = doc(db, "faculty", "Pr3XnIy8GB4ynS4NBpHN"); // Specify the document ID here
             const docSnap = await getDoc(docRef);
 
             if (docSnap.exists()) {
@@ -58,7 +58,7 @@ const Navbar = () => {
         <div className='Nav1'>
             <div className="Size">
                 {/* Birthday Text */}
-                <p className="birthday-text">
+                <p className="birthday-text" style={{ fontSize: '16px' }}>
                     Happy Birthday<br />
                     {name ? `9 November ${name}` : 'Loading...'}
                 </p>
