@@ -1,9 +1,19 @@
+<<<<<<< HEAD
 /* 
 .left-side {
   background-color: lightblue;
   width: 270px;
   height: 1548.84px;
   position: fixed; 
+=======
+body{
+  background-color: #F4F7FA;
+  /* height: 1600px; */
+  width: 100%;
+  }
+.App {
+  text-align: center;
+>>>>>>> 3963127ac2eea7d2f65983ea0a67a489057dfc94
 }
 
 .right-side {
