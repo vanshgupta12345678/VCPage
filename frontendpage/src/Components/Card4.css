@@ -1,0 +1,77 @@
+/* Card101 Styles */
+.Card101 {
+    background-color: #ffffff;
+    width: 590.25px;
+    height: 390.16px;
+    margin-left: 300px;
+    margin-right: auto;
+    margin-top: 20px;
+    gap: 0px;
+    border-radius: 12px 0px 0px 0px;
+    border: 1px solid #DBE0E5;
+    opacity: 1;
+}
+
+/* Card401 Styles */
+.Card401 {
+    background-color: #ffffff;
+    border: 1px solid #DBE0E5;
+    width: 477px;
+    height: 470.16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    gap: 0px;
+    opacity: 1;
+}
+
+/* Media Query for screens smaller than 1024px (tablets) */
+@media (max-width: 1024px) {
+    /* Adjust width of both divs for tablet size */
+    .Card101 {
+        width: 80%; /* Set width to 80% for tablet devices */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Card401 {
+        width: 80%; /* Set width to 80% for tablet devices */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Media Query for screens smaller than 768px (mobile phones) */
+@media (max-width: 768px) {
+    /* Adjust width of both divs for smaller screens */
+    .Card101, .Card401 {
+        width: 100%; /* Full width on mobile */
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    /* Optionally, adjust height for smaller screens if needed */
+    .Card101 {
+        height: 390px; /* Allow height to adjust dynamically */
+    }
+
+    .Card401 {
+        height: auto; /* Allow height to adjust dynamically */
+    }
+}
+
+/* Media Query for smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .Card101, .Card401 {
+        width: 100%; /* Full width on very small devices */
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    /* Further adjust margins if necessary */
+    .Card101 h3, .Card401 h3 {
+        font-size: 18px; /* Reduce heading size for smaller devices */
+    }
+}

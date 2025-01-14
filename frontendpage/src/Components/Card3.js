@@ -23,8 +23,8 @@ const Card3 = () => {
                         <div className='logo'>
                             <img src={logo} alt="Logo" />
                             <div style={{ marginLeft: '10px', display: 'flex', flexDirection: 'column' }}>
-                                <p style={{marginTop:'20px'}}>DiannaRusael<br />ATSID1234</p>
-                               
+                                <p style={{ marginTop: '20px' }}>DiannaRusael<br />ATSID1234</p>
+
                             </div>
                         </div>
                     </div>
