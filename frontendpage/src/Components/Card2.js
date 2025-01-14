@@ -64,7 +64,7 @@ const Card2 = () => {
                     </table>
                 </div>
 
-                <div className='box2' style={{  marginTop: '120px'}}>
+                <div className='box2' >
                     <table>
                         <thead>
                             <tr style={{ display: 'flex' }}>
@@ -79,7 +79,7 @@ const Card2 = () => {
                         <div style={{ color: 'white', fontSize: '30px', padding: '10px' }}>
                             <FaCalendarAlt />
                         </div>
-                        <div style={{ marginTop: '10px',color:'white' }}>
+                        <div style={{ marginTop: '10px',color:'white'}}>
                             Diwali<br/>Mon 20 November 2024
                         </div>
                     </div>
